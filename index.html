@@ -3,53 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>George Chris | Web Developer</title>
+<title>George Chris | Web Developer in Lagos</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-* {margin:0;padding:0;box-sizing:border-box;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;}
-body {background:#f8fafc;color:#1e293b;line-height:1.6;}
-header {background:#0f172a;color:white;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;}
-header h1 {font-size:1.4rem;font-weight:800;}
-nav {font-size:1.5rem;}
-.hero {padding:4rem 1.5rem;text-align:center;background:white;}
-.hero h2 {font-size:2.2rem;font-weight:800;line-height:1.2;margin-bottom:1rem;}
-.hero p {color:#64748b;max-width:500px;margin:0 auto 1.5rem;font-size:1.05rem;}
-.btn {background:#3b82f6;color:white;padding:0.8rem 1.8rem;border-radius:8px;text-decoration:none;display:inline-block;font-weight:600;}
-.hero-img {margin:2rem auto 0;max-width:500px;height:250px;background:linear-gradient(135deg,#3b82f6,#8b5cf6);border-radius:16px;display:flex;align-items:center;justify-content:center;color:white;font-size:1.2rem;font-weight:600;}
-.section {padding:3rem 1.5rem;text-align:center;}
-.section h3 {font-size:1.6rem;margin-bottom:1rem;}
-.cards {display:grid;gap:1rem;margin-top:1.5rem;}
-.card {background:white;padding:1.5rem;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,0.05);}
-.card h4 {margin-bottom:0.5rem;}
-footer {background:#0f172a;color:#94a3b8;padding:2rem 1.5rem;text-align:center;margin-top:2rem;}
-footer a {color:#60a5fa;text-decoration:none;font-weight:600;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{background:#f8fafc;color:#1e293b;line-height:1.6}
+header{background:#0f172a;color:#fff;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+header h1{font-size:22px;font-weight:800}
+nav a{color:#cbd5e1;text-decoration:none;margin-left:20px;font-weight:600}
+.hero{padding:70px 6%;display:grid;grid-template-columns:1.2fr 0.8fr;gap:30px;align-items:center;background:#fff}
+.hero h2{font-size:48px;line-height:1.1;font-weight:800;color:#0f172a}
+.hero h2 span{color:#2563eb}
+.hero p{margin:18px 0 28px;color:#64748b;font-size:18px;max-width:520px}
+.btn{display:inline-block;padding:14px 28px;border-radius:10px;text-decoration:none;font-weight:700}
+.btn-primary{background:#2563eb;color:#fff}
+.btn-outline{border:2px solid #e2e8f0;margin-left:12px;color:#0f172a}
+.card{background:linear-gradient(135deg,#3b82f6,#8b5cf6);border-radius:24px;height:360px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:22px;text-align:center;padding:20px}
+.section{padding:60px 6%}
+.section h3{font-size:32px;text-align:center;margin-bottom:40px;color:#0f172a}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.box{background:#fff;padding:28px;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.05)}
+.box h4{margin-bottom:10px}
+.box p{color:#64748b;font-size:15px}
+.contact{background:#0f172a;color:#fff;text-align:center;padding:70px 6%}
+.contact h3{color:#fff}
+.whatsapp{background:#25D366;color:#fff;padding:16px 32px;border-radius:50px;font-size:18px;display:inline-block;margin-top:20px;text-decoration:none;font-weight:800}
+footer{text-align:center;padding:20px;color:#94a3b8;font-size:14px}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.hero h2{font-size:36px}.grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header>
 <h1>George Chris</h1>
-<div>☰</div>
+<nav><a href="#work">Work</a><a href="#contact">Contact</a></nav>
 </header>
-
-<div class="hero">
-<h2>Build Fast,<br>Responsive Websites</h2>
-<p>I'm George Chris, a Web Developer based in Lagos. I convert Figma to pixel-perfect HTML, optimized for performance and accessibility.</p>
-<a class="btn" href="https://wa.me/2340000000000">Get Started</a>
-<div class="hero-img">George Chris • Developer</div>
+<section class="hero">
+<div>
+<h2>I'm George Chris,<br><span>Web Developer</span><br>based in Lagos.</h2>
+<p>I convert Figma designs to pixel-perfect, fast and responsive HTML. I help businesses and startups launch beautiful landing pages that convert.</p>
+<a href="#contact" class="btn btn-primary">Hire Me</a>
+<a href="#work" class="btn btn-outline">View Work</a>
 </div>
-
-<div class="section">
+<div class="card">George Chris<br>• Developer •<br><br>Lagos, Nigeria</div>
+</section>
+<section class="section" id="work">
 <h3>What I Do</h3>
-<div class="cards">
-<div class="card"><h4>⚡ Figma to HTML</h4><p>Pixel-perfect conversion with clean code</p></div>
-<div class="card"><h4>📱 Responsive Design</h4><p>Looks perfect on phone, tablet & desktop</p></div>
-<div class="card"><h4>🚀 Fast Hosting</h4><p>Deployed on GitHub Pages & optimized</p></div>
+<div class="grid">
+<div class="box"><h4>⚡ Figma to HTML</h4><p>Pixel-perfect conversion with clean, semantic code.</p></div>
+<div class="box"><h4>📱 Responsive Design</h4><p>Looks perfect on mobile, tablet, and desktop.</p></div>
+<div class="box"><h4>🚀 Fast & SEO</h4><p>Optimized for performance and Google ranking.</p></div>
 </div>
-</div>
-
-<footer>
-<p>Built by <strong style="color:white;">George Chris</strong> in Lagos, NG</p>
-<p style="margin-top:0.5rem;"><a href="https://github.com/christopherfriday">GitHub</a> • <a href="https://wa.me/2340000000000">WhatsApp Me</a></p>
-<p style="margin-top:1rem;font-size:0.8rem;">© 2026 George Chris. All rights reserved.</p>
-</footer>
+</section>
+<section class="contact" id="contact">
+<h3>Let's Build Your Website</h3>
+<p style="color:#cbd5e1;margin-top:10px">Available for freelance. Response in 2 hours.</p>
+<a class="whatsapp" href="https://wa.me/08168649257" target="_blank">💬 Chat on WhatsApp</a>
+<p style="margin-top:20px;color:#94a3b8">Or email: georgechris.dev@gmail.com</p>
+</section>
+<footer>© 2026 George Chris - Built with ❤️ in Lagos</footer>
 </body>
 </html>
