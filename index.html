@@ -3,39 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BrandCo - Christophe Friday</title>
-<link rel="stylesheet" href="style.css">
+<title>George Chris | Web Developer</title>
+<style>
+* {margin:0;padding:0;box-sizing:border-box;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;}
+body {background:#f8fafc;color:#1e293b;line-height:1.6;}
+header {background:#0f172a;color:white;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;}
+header h1 {font-size:1.4rem;font-weight:800;}
+nav {font-size:1.5rem;}
+.hero {padding:4rem 1.5rem;text-align:center;background:white;}
+.hero h2 {font-size:2.2rem;font-weight:800;line-height:1.2;margin-bottom:1rem;}
+.hero p {color:#64748b;max-width:500px;margin:0 auto 1.5rem;font-size:1.05rem;}
+.btn {background:#3b82f6;color:white;padding:0.8rem 1.8rem;border-radius:8px;text-decoration:none;display:inline-block;font-weight:600;}
+.hero-img {margin:2rem auto 0;max-width:500px;height:250px;background:linear-gradient(135deg,#3b82f6,#8b5cf6);border-radius:16px;display:flex;align-items:center;justify-content:center;color:white;font-size:1.2rem;font-weight:600;}
+.section {padding:3rem 1.5rem;text-align:center;}
+.section h3 {font-size:1.6rem;margin-bottom:1rem;}
+.cards {display:grid;gap:1rem;margin-top:1.5rem;}
+.card {background:white;padding:1.5rem;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,0.05);}
+.card h4 {margin-bottom:0.5rem;}
+footer {background:#0f172a;color:#94a3b8;padding:2rem 1.5rem;text-align:center;margin-top:2rem;}
+footer a {color:#60a5fa;text-decoration:none;font-weight:600;}
+</style>
 </head>
 <body>
 <header>
-<nav class="navbar">
-<div class="logo">BrandCo</div>
-<ul class="nav-links">
-<li><a href="#features">Features</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-<button class="menu-toggle">☰</button>
-</nav>
+<h1>George Chris</h1>
+<div>☰</div>
 </header>
-<main>
-<section class="hero">
-<div class="hero-text">
-<h1>Build Fast, Responsive Websites</h1>
-<p>Pixel-perfect Figma to HTML, optimized for performance and accessibility.</p>
-<button>Get Started</button>
+
+<div class="hero">
+<h2>Build Fast,<br>Responsive Websites</h2>
+<p>I'm George Chris, a Web Developer based in Lagos. I convert Figma to pixel-perfect HTML, optimized for performance and accessibility.</p>
+<a class="btn" href="https://wa.me/2340000000000">Get Started</a>
+<div class="hero-img">George Chris • Developer</div>
 </div>
-<div class="hero-img">
-<img src="https://via.placeholder.com/500x300" alt="Hero">
+
+<div class="section">
+<h3>What I Do</h3>
+<div class="cards">
+<div class="card"><h4>⚡ Figma to HTML</h4><p>Pixel-perfect conversion with clean code</p></div>
+<div class="card"><h4>📱 Responsive Design</h4><p>Looks perfect on phone, tablet & desktop</p></div>
+<div class="card"><h4>🚀 Fast Hosting</h4><p>Deployed on GitHub Pages & optimized</p></div>
 </div>
-</section>
-<section class="features" id="features">
-<h2>Why Choose Us</h2>
-<div class="grid">
-<article><h3>Semantic HTML</h3><p>Clean SEO friendly structure.</p></article>
-<article><h3>Flexbox & Grid</h3><p>Modern responsive layouts.</p></article>
-<article><h3>Performance</h3><p>Optimized images and minified CSS.</p></article>
 </div>
-</section>
-</main>
+
 <footer>
+<p>Built by <strong style="color:white;">George Chris</strong> in Lagos, NG</p>
+<p style="margin-top:0.5rem;"><a href="https://github.com/christopherfriday">GitHub</a> • <a href="https://wa.me/2340000000000">WhatsApp Me</a></p>
+<p style="margin-top:1rem;font-size:0.8rem;">© 2026 George Chris. All rights reserved.</p>
+</footer>
+</body>
+</html>
